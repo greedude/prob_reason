@@ -8,7 +8,7 @@ AssertOpenGL;
 
 
 HideCursor;
-KbName(' UnifyKeyNames');
+KbName('UnifyKeyNames');
 EscapeKey=KbName('ESCAPE');
 
 left=0;
@@ -42,7 +42,7 @@ curScreen=max(screens);
 l_progressbar = 100;
 h_progressbar = 20;
 
-
+        
 KbCheck;
 GetSecs;
 
@@ -111,54 +111,54 @@ while trials <= total_trial
 % get new graph according to the probability assigned to each graph   
     if status == 0
         if graph_type < 0.05
-            imdata=imread('1.png');
+            imdata=imread('static\1.png');
             str_graph=sprintf('Í¼1£º%s',str_expl{1});        
         elseif graph_type >= 0.05 &&graph_type < 0.1
-            imdata=imread('2.png');
+            imdata=imread('static\2.png');
             str_graph=sprintf('Í¼2£º%s',str_expl{6});  
         elseif graph_type >= 0.1 && graph_type < 0.25
-            imdata=imread('3.png');
+            imdata=imread('static\3.png');
             str_graph=sprintf('Í¼3£º%s',str_expl{2});  
         elseif graph_type >= 0.25 && graph_type < 0.4
-            imdata=imread('4.png');
+            imdata=imread('static\4.png');
             str_graph=sprintf('Í¼4£º%s',str_expl{5});  
         elseif graph_type >= 0.4 && graph_type < 0.5
-            imdata=imread('5.png');
+            imdata=imread('static\5.png');
             str_graph=sprintf('Í¼5£º%s',str_expl{3});  
 %         elseif graph_type >= 0.5 && graph_type < 0.6
 %             imdata=imread('6.png');
 %             str_graph=sprintf('Í¼6£º%s',str_expl{4});  
         elseif graph_type >= 0.5 && graph_type < 0.8
-            imdata=imread('7.png');
+            imdata=imread('static\7.png');
             str_graph=sprintf('Í¼6£º%s\n ',str_expl{3});  
         elseif graph_type >= 0.8 && graph_type < 1
-            imdata=imread('8.png');
+            imdata=imread('static\8.png');
             str_graph=sprintf('Í¼7£º%s\n',str_expl{4});  
         end
     elseif status ==1
         if graph_type < 0.05
-            imdata=imread('4.png');
+            imdata=imread('static\4.png');
             str_graph=sprintf('Í¼1£º%s',str_expl{1});        
         elseif graph_type >= 0.05 &&graph_type < 0.1
-            imdata=imread('3.png');
+            imdata=imread('static\3.png');
             str_graph=sprintf('Í¼2£º%s',str_expl{6});  
         elseif graph_type >= 0.1 && graph_type < 0.25
-            imdata=imread('2.png');
+            imdata=imread('static\2.png');
             str_graph=sprintf('Í¼3£º%s',str_expl{2});  
         elseif graph_type >= 0.25 && graph_type < 0.4
-            imdata=imread('1.png');
+            imdata=imread('static\1.png');
             str_graph=sprintf('Í¼4£º%s',str_expl{5});  
         elseif graph_type >= 0.4 && graph_type < 0.5
-            imdata=imread('8.png');
+            imdata=imread('static\8.png');
             str_graph=sprintf('Í¼5£º%s',str_expl{3});  
 %         elseif graph_type >= 0.5 && graph_type < 0.6
 %             imdata=imread('7.png');
 %             str_graph=sprintf('Í¼6£º%s',str_expl{4});  
         elseif graph_type >= 0.6 && graph_type < 0.8
-            imdata=imread('6.png');
+            imdata=imread('static\6.png');
             str_graph=sprintf('Í¼6£º%s\n',str_expl{3});  
         elseif graph_type >= 0.8 && graph_type < 1
-            imdata=imread('5.png');
+            imdata=imread('static\5.png');
             str_graph=sprintf('Í¼7£º%s\n',str_expl{4});  
         end
     end

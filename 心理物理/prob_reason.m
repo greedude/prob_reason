@@ -37,8 +37,8 @@ duration=0.8;
 graph_num = 0;
 total_time = 0;
 
-reward_sound = 'right_sound.wav';
-punish_sound = 'wrong_sound.wav';
+reward_sound = 'static\right_sound.wav';
+punish_sound = 'static\wrong_sound.wav';
 
 
 
@@ -51,7 +51,7 @@ curScreen=max(screens);
 l_progressbar = 100;
 h_progressbar = 20;
 
-datafilename = strcat(subName,'_',num2str(subNo),'.dat'); % name of data file to write to
+datafilename = strcat('data\',subName,'_',num2str(subNo),'.dat'); % name of data file to write to
 
 datafilepointer = fopen(datafilename,'wt'); % open ASCII file for writing
 
@@ -140,35 +140,35 @@ WaitSecs(2);
     % get new graph according to the probability assigned to each graph
         if status == 0
             if graph_type < 0.05
-                imdata=imread('1.png');
+                imdata=imread('static\1.png');
             elseif graph_type >= 0.05 &&graph_type < 0.1
-                imdata=imread('2.png');
+                imdata=imread('static\2.png');
             elseif graph_type >= 0.1 && graph_type < 0.25
-                imdata=imread('3.png');
+                imdata=imread('static\3.png');
             elseif graph_type >= 0.25 && graph_type < 0.4
-                imdata=imread('4.png');
+                imdata=imread('static\4.png');
             elseif graph_type >= 0.4 && graph_type < 0.55
-                imdata=imread('5.png');
+                imdata=imread('static\5.png');
             elseif mode == 0 && graph_type >= 0.55 && graph_type < 1
-                imdata=imread('7.png');
+                imdata=imread('static\7.png');
             elseif mode == 1 && graph_type >= 0.55 && graph_type < 1
-                imdata=imread('8.png');
+                imdata=imread('static\8.png');
             end
         elseif status == 1
             if graph_type < 0.05
-                imdata=imread('4.png');
+                imdata=imread('static\4.png');
             elseif graph_type >= 0.05 &&graph_type < 0.1
-                imdata=imread('3.png');
+                imdata=imread('static\3.png');
             elseif graph_type >= 0.1 && graph_type < 0.25
-                imdata=imread('2.png');
+                imdata=imread('static\2.png');
             elseif graph_type >= 0.25 && graph_type < 0.4
-                imdata=imread('1.png');
+                imdata=imread('static\1.png');
             elseif graph_type >= 0.4 && graph_type < 0.55
-                imdata=imread('8.png');
+                imdata=imread('static\8.png');
             elseif mode == 0 && graph_type >= 0.55 && graph_type < 1
-                imdata=imread('6.png');
+                imdata=imread('static\6.png');
             elseif mode == 1 && graph_type >= 0.55 && graph_type < 1
-                imdata=imread('5.png');
+                imdata=imread('static\5.png');
             end
         end
 

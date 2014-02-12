@@ -1,6 +1,6 @@
 function data_analysis(subName,subNo)
 
-datafilename = strcat(subName,'_',num2str(subNo),'.dat'); % name of data file to read
+datafilename = strcat('..\data\',subName,'_',num2str(subNo),'.dat'); % name of data file to read
 DATA = dlmread(datafilename,' ');
 
 size_data = size(DATA);

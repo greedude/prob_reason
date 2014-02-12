@@ -1,4 +1,6 @@
 function [statebase,trigCnt,quit]=isTrigger(statebase,trigCnt,s)    
+% judge is there a fMRI trigger received
+% press 'esc' to quit the experiment
  while 1
         quit=0;
         state_trig =s.PinStatus;
